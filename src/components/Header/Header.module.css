@@ -1,0 +1,21 @@
+.title {
+  font-size: rem(36px);
+  font-weight: 700;
+  margin-bottom: var(--mantine-spacing-xs);
+  color: white;
+}
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px); 
+  }
+}
+
+
+.floating {
+  animation: float 3s ease-in-out infinite; 
+}

@@ -1,0 +1,32 @@
+.header {
+  height: rem(80px);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: var(--mantine-spacing-md);
+  padding-right: var(--mantine-spacing-md);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16.5px;
+
+  
+
+  @media (max-width: $mantine-breakpoint-sm) {
+    height: rem(42px);
+    width: 100%;
+  }
+
+  @mixin hover {
+    color: #4452FE;
+    transition: 200ms ease-in-out;
+    
+}
+}
+
+
+
+
+
