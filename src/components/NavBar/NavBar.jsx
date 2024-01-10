@@ -1,5 +1,5 @@
 import React from "react";
-import { Group, Box, Burger, Drawer, ScrollArea } from "@mantine/core";
+import { Group, Box, Burger, Drawer, ScrollArea, Image } from "@mantine/core";
 import { MantineLogo } from "@mantine/ds";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "./NavBar.module.css";
@@ -7,6 +7,7 @@ import Btn from "../Button";
 import { styles } from "../../data";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import { ImageCollection } from "../../assets";
 
 
 const navLinks = [
@@ -63,7 +64,7 @@ export default function NavBar() {
         className={`flex justify-between items-center bg-primary md:px-8 text-white font-sans ${classes.header} ${styles.body}`}
       >
         <Group h="100%" className="flex items-center font-extrabold lg:text-[25px] text-[22px] text-accent">
-          DoinZ
+          <Image src={ImageCollection.logo} alt="DoinZ Logo" className="w-[100px] h-[100px]" />
         </Group> 
 
         <Group h="100%" gap={0} className="hidden md:flex">
